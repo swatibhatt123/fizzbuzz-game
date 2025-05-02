@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var output=[];
+     function fizzbuzz(n){
+        for(var count= 1 ;count <= n ; count++)
+     {
+        if (count % 3===0 && count% 5 ===0){
+            output.push("fizzbuzz");
+        }
+       else if (count % 3===0){
+            output.push("fizz");
+        }
+      else if (count% 5 ===0){
+            output.push("buzz");
+        }
+
+       else{
+        output.push(count);
+       } 
+    }
+    document.write(output.join('<br>'));
+}  
+   fizzbuzz(100); 
+     
+     
+</script>
+</html>
